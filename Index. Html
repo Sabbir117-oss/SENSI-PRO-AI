@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Free Fire Headshot Sensitivity Finder 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+font-family: Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+.box{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+margin-top:20px;
+}
+input,select,button{
+padding:10px;
+margin:10px;
+width:80%;
+border:none;
+border-radius:5px;
+}
+button{
+background:red;
+color:white;
+font-weight:bold;
+}
+.result{
+background:black;
+padding:15px;
+margin-top:20px;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<h1>🔥 Headshot Sensitivity Finder 2026</h1>
+<p>200 Sensitivity Updated System</p>
+
+<div class="box">
+<select id="phone">
+<option>Low End Device</option>
+<option>Mid Range Device</option>
+<option>High End Device</option>
+</select>
+
+<input type="number" id="ram" placeholder="Enter Your RAM (GB)">
+<button onclick="findSensi()">Get Perfect Headshot Sensitivity</button>
+</div>
+
+<div class="result" id="output"></div>
+
+<script>
+function findSensi(){
+var ram=document.getElementById("ram").value;
+var phone=document.getElementById("phone").value;
+
+var general=200;
+var red=180;
+var scope2=170;
+var scope4=160;
+var awm=150;
+var free=140;
+
+if(ram<=2){
+general=180; red=170; scope2=160; scope4=150; awm=140; free=130;
+}
+if(ram>=4){
+general=200; red=190; scope2=180; scope4=170; awm=160; free=150;
+}
+if(phone=="High End Device"){
+general=200; red=200; scope2=190; scope4=180; awm=170; free=160;
+}
+
+document.getElementById("output").innerHTML=
+"<h2>Perfect Headshot Sensitivity</h2>"+
+"General: "+general+"<br>"+
+"Red Dot: "+red+"<br>"+
+"2x Scope: "+scope2+"<br>"+
+"4x Scope: "+scope4+"<br>"+
+"AWM Scope: "+awm+"<br>"+
+"Free Look: "+free;
+}
+</script>
+
+</body>
+</html>
